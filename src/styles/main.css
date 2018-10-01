@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 20px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #333;
+    height: 100%;
+}
+
+#app {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.left {
+    width: 70%;
+    height: 100%;
+    padding: 1rem 1rem 1rem 0;
+    overflow-y: auto;
+}
+
+.right {
+    width: 30%;
+    border-left: 1px solid #666;
+    height: 100%;
+    padding: 1rem;
+}
+
+.right > button {
+    display: inline-block;
+    vertical-align: top;
+    margin: .5rem;
+}
+
+.block {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(33.333% - 1rem);
+    height: 3rem;
+    border: 1px solid #333;
+    margin: 0 0 1rem 1rem;
+    padding: .5rem 1.5rem .5rem .5rem;
+    position: relative;
+}
+
+.block > button {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.block > .block {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: static;
+}
+
+.block.green {
+    background-color: #628b16;
+}
+
+.block.red {
+    background-color: #ff3d0a;
+}
+
+.block.focus {
+    box-shadow: 0 0 .5rem #000;
+}
+
+.count {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #666;
+}
